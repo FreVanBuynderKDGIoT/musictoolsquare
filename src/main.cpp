@@ -18,8 +18,13 @@
 const char *urls[] = {
     "https://22653.live.streamtheworld.com/MNM_128.mp3"
 };
+<<<<<<< HEAD
 const char *wifi = WiFiSSID;
 const char *password = WiFiPasswd;
+=======
+const char *wifi = "YOURSSID";
+const char *password = "YOURPASSWORD";
+>>>>>>> 3e7be5267f59797c85e9f69caf90dde1f4a77b86
 
 ICYStream urlStream(wifi, password);
 AudioSourceURL source(urlStream, urls, "audio/mp3");
