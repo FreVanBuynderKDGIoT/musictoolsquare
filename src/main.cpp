@@ -17,8 +17,8 @@
 const char *urls[] = {
     "https://22653.live.streamtheworld.com/MNM_128.mp3"
 };
-const char *wifi = "Actritas";
-const char *password = "TSQR007!";
+const char *wifi = "YOURSSID";
+const char *password = "YOURPASSWORD";
 
 ICYStream urlStream(wifi, password);
 AudioSourceURL source(urlStream, urls, "audio/mp3");
