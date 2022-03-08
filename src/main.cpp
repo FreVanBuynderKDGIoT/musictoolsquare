@@ -11,14 +11,15 @@
 
 #include "AudioTools.h"
 #include "AudioCodecs/CodecMP3Helix.h"
+#include "credentials.h"
 
 
 
 const char *urls[] = {
     "https://22653.live.streamtheworld.com/MNM_128.mp3"
 };
-const char *wifi = "Actritas";
-const char *password = "TSQR007!";
+const char *wifi = WiFiSSID;
+const char *password = WiFiPasswd;
 
 ICYStream urlStream(wifi, password);
 AudioSourceURL source(urlStream, urls, "audio/mp3");
